@@ -1,4 +1,5 @@
-# Git Usage Guide - How to use it effectively
+# Git Usage Guide
+## How to use it effectively in a collaborative environment
 ===============
 This guide is intended for those of you who already know how to use Git and are, probably, already familiar with using Git as a source code repository for your own codebases.
 
@@ -39,3 +40,18 @@ If it's a great commit, the process is fairly easy. There is a button that says 
 If the commit requires a lot of work, let the developer know that too. There may be times where the pull request is something that you want and the developer either seems unable to fix the request themselves, unwilling, or they abandoned it entirely. In these cases, you may want to fix the problem yourself before accepting a merge request. Github can help you out here too! There's a small link below that merge button that says 'command line'. Click on that link and Github will provide you with some instructions for how to pull that merge request onto your own local machine and test it out and maybe even fix it up!
 
 There are also, sadly, times when a developer wants to add a feature to your codebase that you don't feel fits within your vision. It's ok to say no! However, being polite is the best way to do so without discouraging others from coming back to help you in the future on other things.
+
+## Git Tools
+You can use any number of tools for Git, but I have found that there are a few things to note.
+
+### Windows
+- If you want a command-line version of Git, use MSysGit (now Git for Windows): http://msysgit.github.io/. It works out of the box. Most everything else has problems.
+- If you want a GUI version of Git (even when I use the command line, I still use a GUI to view the log), I recommend SourcTree (http://www.sourcetreeapp.com/). It's free, but you have to register with Atlassian. Hopefully they don't randomly start charging one day, but I like it enough personally that I'd pay for it. If you're pretty new to Git, SourceTree isn't a bad choice for helping you get used to it. That being said, some of the more complex things in Git cannot be done (and probably should not be done) from within the tool and you will need to resort to the command line.
+
+### Mac OSX
+- It just plain works! If you have brew installed (get it here: http://brew.sh/), you can just do: ```brew install git```
+- You can also use SourceTree on Mac (http://www.sourcetreeapp.com/)
+
+### Linux
+- Command Line Git just works on Linux too, though the process to install it is going to depend on your flavor.
+- There are a few different GUI tools for Linux. I tried a few, but none of them really stood out to me as awesome. Try a few out and just use the one you want, or just view the log from the command line (it doesn't look nearly as good though).
